@@ -12,14 +12,14 @@
     "prettier:write": "prettier --write  '*.{json,js}' './**/*.{js,ts}'"
   },
   "dependencies": {
-    "@toddledev/core": "0.0.5-alpha.1",
-    "@toddledev/ssr": "0.0.5-alpha.1",
+    "@toddledev/core": "0.0.9",
+    "@toddledev/ssr": "0.0.9",
     "hono": "4.6.16"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20250303.0",
     "@eslint/js": "9.22.0",
-    "@toddledev/runtime": "0.0.5-alpha.1",
+    "@toddledev/runtime": "0.0.9",
     "@typescript-eslint/eslint-plugin": "8.26.0",
     "@typescript-eslint/parser": "8.26.0",
     "eslint-plugin-inclusive-language": "2.2.1",

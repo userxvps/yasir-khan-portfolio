@@ -93,6 +93,10 @@ export const toddlePage = async (c: Context<HonoEnv>) => {
       url,
       // This refers to the endpoint we created in fontRouter for our proxied stylesheet
       cssBasePath: '/.toddle/fonts/stylesheet/css2',
+      // Just to be explicit about where to grab the reset stylesheet from
+      resetStylesheetPath: '/_static/reset.css',
+      // This refers to the stylesheet endpoint declared in index.ts
+      pageStylesheetPath: `/.toddle/stylesheet/${page.name}.css`,
       page: toddleComponent,
       files: project.files,
       project: project.project,
@@ -136,7 +140,7 @@ export const toddlePage = async (c: Context<HonoEnv>) => {
     ])
     codeImport = `
             <script type="module">
-              import { initGlobalObject, createRoot } from '/_static/esm-page.main.js';
+              import { initGlobalObject, createRoot } from '/_static/page.main.esm.js';
               import { loadCustomCode, formulas, actions } from '/.toddle/custom-code.js?${customCodeSearchParams.toString()}';
 
               window.__toddle = ${JSON.stringify(toddleInternals).replaceAll(
@@ -152,7 +156,7 @@ export const toddlePage = async (c: Context<HonoEnv>) => {
   } else {
     codeImport = `
         <script type="module">
-          import { initGlobalObject, createRoot } from '/_static/esm-page.main.js';
+          import { initGlobalObject, createRoot } from '/_static/page.main.esm.js';
 
           window.__toddle = ${JSON.stringify(toddleInternals).replaceAll(
             '</script>',
