@@ -25,5 +25,6 @@ To deploy:
 - Create a new API key in your [Cloudflare account](https://dash.cloudflare.com/profile/api-tokens) - you could for instance use the `Edit Cloudflare Workers` template
 - Copy the API key and add it to your Github repository secrets as `CLOUDFLARE_API_TOKEN`. You will do this under: Settings > Secrets and variables > Actions > New repository secret
 - Create a commit on the `main` branch
+- Potentially add your account_id to the wrangler.toml file (you can find it in your Cloudflare dashboard)
 
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/nordcraftengine/cloudflare-example)
