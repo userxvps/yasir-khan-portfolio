@@ -52,7 +52,7 @@ app.get('/manifest.json', manifest)
 app.get('/favicon.ico', favicon)
 app.get('/serviceWorker.js', serviceWorker)
 
-// toddle specific endpoints/services on /.toddle/ subpath 👇
+// Nordcraft specific endpoints/services on /.toddle/ subpath 👇
 app.route('/.toddle/fonts', fontRouter)
 app.get('/.toddle/stylesheet/:pageName{.+.css}', stylesheetHandler)
 app.get('/.toddle/custom-code.js', customCode)

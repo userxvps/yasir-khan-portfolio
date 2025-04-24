@@ -18,4 +18,4 @@ To use a different project, replace the json file in the `__project__` folder.
 
 ### Deploy
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/toddledev/cloudflare-example)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/nordcraftengine/cloudflare-example)

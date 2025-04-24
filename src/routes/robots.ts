@@ -31,6 +31,8 @@ Disallow: /_toddle
 Disallow: /_toddle/
 Disallow: /.toddle
 Disallow: /.toddle/
+Disallow: /.nordcraft
+Disallow: /.nordcraft/
 Disallow: /_api
 Disallow: /_api/
 Allow: /cdn-cgi/imagedelivery/*

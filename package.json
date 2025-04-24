@@ -1,5 +1,5 @@
 {
-  "name": "toddle-cloudflare-worker",
+  "name": "nordcraft-cloudflare-worker",
   "scripts": {
     "predev": "bun scripts/syncStaticAssets.js && bunx esbuild --bundle --outdir=dist --platform=node --format=esm src/index.ts",
     "dev": "wrangler dev --no-bundle",
