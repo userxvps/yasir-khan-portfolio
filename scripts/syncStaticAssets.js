@@ -1,7 +1,7 @@
 // Copy files from the static-assets directory to the dist directory using fs
 // This script is executed by the build process
 const fs = require('fs')
-import { RESET_STYLES } from '@toddledev/core/dist/styling/theme.const'
+import { RESET_STYLES } from '@nordcraft/core/dist/styling/theme.const'
 
 // assets/_static/ folder
 fs.mkdirSync(`${__dirname}/../assets/_static`, { recursive: true })
@@ -11,7 +11,7 @@ fs.mkdirSync(`${__dirname}/../assets/_static`, { recursive: true })
   'custom-element.main.esm.js',
 ].forEach((f) =>
   fs.copyFileSync(
-    `${__dirname}/../node_modules/@toddledev/runtime/dist/${f}`,
+    `${__dirname}/../node_modules/@nordcraft/runtime/dist/${f}`,
     `${__dirname}/../assets/_static/${f}`,
   ),
 )
